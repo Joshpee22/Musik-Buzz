@@ -18,7 +18,7 @@
     <!-- Smooth Scroll library -->
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 </head>
-<body>
+<body onload="slider()">
     
     <header>
         <div class="nav container">
@@ -60,6 +60,7 @@
             <h2 class="home-title">Buzz</h2>
             <span class="home-subtitle">Be inspired. Be informed!</span>
         </div>
+        
     </section>
 
     <section class="about container" id="about">
@@ -85,9 +86,19 @@ Here are a few notable artists whose contributions to the genre have helped defi
             <a href="#" class="btn2">Read more</a>
         </div>
         <div class="imgBx">
-            <img src="about.png" alt="" class="fitBg">
+            <img src="images/Fela-real.jpg" alt="" class="fitBg">
         </div>
     </section>
+
+    <div class="banner">
+        <div class="slider">
+            <img src="images/Yellow & Gold Modern Sunset Phone Wallpaper.jpg" id="slideImg">
+
+        </div>
+        <div class="overlay">
+
+        </div>
+    </div>
 
     <section class="news container" id="news">
     <div class="post-filter container">
@@ -96,6 +107,9 @@ Here are a few notable artists whose contributions to the genre have helped defi
         <span class="filter-item" data-filter="food">Music</span>
         <span class="filter-item" data-filter="news">News</span>
     </div>
+
+    
+    
     
     <div class="post container">
         <!-- Post 1 -->
@@ -330,6 +344,32 @@ Here are a few notable artists whose contributions to the genre have helped defi
                 });
             });
         });
+
+        var slideImg = document.getElementById("slideImg");
+
+        var images = new Array(
+            "images/Angeli.jpg",
+            "images/Empawa.jpg",
+            "images/Burna.jpg",
+            "images/img3.jpg",
+            "images/mR-eAZI.jpeg",
+            "images/sauti-sol afrikaa.jpg",
+            "images/img9.jpg",
+            "images/R.jpg",
+            "images/img1.jpg",
+    );
+
+    var len = images.length;
+    var i = 0;
+
+    function slider(){
+        if(i > len-1){
+            i = 0;
+        }
+        slideImg.src = images[i];
+        i++;
+        setTimeout('slider()',2000);
+    }
     </script>
     
     <script src="main.js"></script>
