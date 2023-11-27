@@ -17,6 +17,45 @@
 
     <!-- Smooth Scroll library -->
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+<style>
+    
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul {
+  display: inline-block;
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a:hover {
+  color: red;
+}
+
+a,
+p {
+  text-decoration: none;
+  color: #555;
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 25px;
+}
+</style>
 </head>
 <body onload="slider()">
     
@@ -27,24 +66,27 @@
             <div class="header-container">
                 <nav class="nav container">
                     <ul class="nav-list">
-                        <li><a href="#news">News</a></li>
+                        <li><a href="#news">Home</a></li>
+                        <li><a href="#">News</a></li>
                         <li><a href="#">Music</a></li>
-                        <li><a href="#">Chart</a></li>
-                        <li><a href="#">Lifestyle</a></li>
                         <li>
                             <a href="#">Countries</a>
                             <ul>
-                                <li><a href="News.html"></a>Nigeria</li>
-                                <li>South Africa</li>
-                                <li>Kenya</li>
-                                <li>Ghana</li>
-                                <li>Tanzania</li>
-                                <li>Rwadan</li>
+                                <li><a href="News.html">Nigeria</a></li>
+                                <li><a href="#">South Africa</a></li>
+                                <li><a href="#">Kenya</a></li>
+                                <li><a href="#">Ghana</a></li>
+                                <li><a href="#">Tanzania</a></li>
+                                <li><a href="#">Rwanda</a></li>
                             </ul>
                         </li>
+                        <li><a href="signup.html">Register</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </nav>
             </div>
+            
+            
                 
                 
                 <div class="search-bar">
