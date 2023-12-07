@@ -2,6 +2,9 @@
 
 Welcome to Buzz Muzik, your go-to source for the latest trends, news, and vibrant discussions in the world of Afro music! Whether you're a passionate music enthusiast, an artist, or just someone looking to explore the rich and diverse sounds of Afro music, you've come to the right place.
 
+![Buzz Muzik Banner](![image](https://github.com/Joshpee22/Musik-Buzz/assets/123378862/0240d814-ff0b-4f70-81ba-7ff3680250a0)
+)
+
 ## Table of Contents
 
 1. [About Buzz Muzik](#about-buzz-muzik)
