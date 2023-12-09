@@ -1,9 +1,9 @@
 let songs = [
     {
-        name: 'song 1',
-        path: 'assets/musics/Song 1.mp3',
-        artist: 'artist 1',
-        cover: 'assets/images/cover 1.png'
+        name: 'Lonely-At-The-Top-Remix-Ft-Her',
+        path: 'Playlists\Asake-Lonely-At-The-Top-Remix-Ft-Her.mp3',
+        artist: 'Asake',
+        cover: 'images\Asake lonely at the top remix.jpg'
     },
     {
         name: 'song 2',
