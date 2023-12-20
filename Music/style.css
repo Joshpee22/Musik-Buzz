@@ -35,12 +35,150 @@ body{
     display: none;
 }
 
-/* home section */
+/* Header */
+header{
+    position: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+}
+
+header.shadow{
+    background: var(--bg-color);
+    box-shadow: 0 1px 4px hsl(0 4% 14% / 10%);
+    transition: .5s;
+}
+
+header.shadow .logo{
+    color: var(--text-color);
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0;
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--bg-color);
+    color: white;
+}
+
+.logo span{
+    color: white;
+}
+
+.search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 3px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-right: -1px; /* Adjust the negative margin to make space for the icon */
+}
+
+.search-bar button {
+    padding: 1px;
+    color: blue;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 5px; /* Adjust the right position to overlap with the input */
+}
+
+.search-bar i {
+    /* Additional styling for the search icon */
+    font-size: 12px;
+}
+
+/* Optional: Style for better visibility on focus */
+.search-bar input:focus {
+    outline: none;
+    border-color:rgb(85, 24, 24);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+ /* Your existing styles */
+ .nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-list li {
+    margin-right: 18px;
+    position: relative;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+.nav.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list a:hover {
+    color: white;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Additional styles for the dropdown */
+.nav-list ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: rgb(116, 50, 50);
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.nav-list li:hover > ul {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+}
+
+.nav-list ul li {
+    margin: 0;
+    cursor: pointer; /* Add this line to change cursor on hover */
+    transition: background-color 0.3s;
+    white-space: nowrap;
+    color: white;
+}
+
+.nav-list ul li:hover {
+    background-color: rgb(162, 175, 162); /* Change the background color on hover */
+}
+
+/* Home Section */
 
 .home-section{
     width: 100%;
     padding: 20px;
-    height: 100vh;
+    height: 100%;
     padding-bottom: 100px;
     overflow-y: auto;
 }
@@ -76,8 +214,7 @@ body{
     font-size: 30px;
 }
 
-/* playlist card */
-
+/* playlists card */
 .playlists-group{
     position: relative;
     width: 100%;
@@ -110,8 +247,7 @@ body{
     padding: 5px;
 }
 
-/* music-player */
-
+/* music player */
 /* minimize view */
 
 .music-player-section{
@@ -127,6 +263,7 @@ body{
 
 .music-seek-bar{
     -webkit-appearance: none;
+    appearance: none;
     width: 100%;
     position: absolute;
     top: -4px;
@@ -137,6 +274,7 @@ body{
 
 .music-seek-bar::-webkit-slider-thumb{
     -webkit-appearance: none;
+    appearance: none;
     height: 10px;
     width: 5px;
     background: var(--primary-color);
@@ -194,7 +332,6 @@ body{
 }
 
 /* maximize music player styles */
-
 .music-player-section .hide{
     display: none;
     opacity: 0;
@@ -275,6 +412,7 @@ body{
 
 .volume-slider{
     -webkit-appearance: none;
+    appearance: none;
     width: 100px;
     height: 40px;
     position: absolute;
@@ -283,7 +421,7 @@ body{
     transform: rotate(-90deg);
     border-radius: 20px;
     background: var(--alpha-color);
-    overflow: hidden;
+    overflow: none;
     opacity: 0;
     display: none;
 }

@@ -1,4 +1,4 @@
-///// carousels /////////////////
+///////////////////    carousel   ///////////////////////
 
 const carousel = [...document.querySelectorAll('.carousel img')];
 
@@ -12,7 +12,7 @@ const changeCarousel = () => {
     } else{
         carouselImageIndex++;
     }
-
+    
     carousel[carouselImageIndex].classList.toggle('active');
 }
 
@@ -20,16 +20,16 @@ setInterval(() => {
     changeCarousel();
 }, 3000);
 
-/////////////////////// navigations ////////////////////
+/////////////////////navigations////////////
 
-////////////////////// toggling music player
+////////////toggling music player
 
 const musicPlayerSection = document.querySelector('.music-player-section');
 
 let clickCount = 1;
 
 musicPlayerSection.addEventListener('click', () => {
-    
+    // checking for double click manually
     if(clickCount >= 2){
         musicPlayerSection.classList.add('active');
         clickCount = 1;
@@ -41,7 +41,7 @@ musicPlayerSection.addEventListener('click', () => {
     }, 250);
 })
 
-////////////// back from music player
+///////////////  back from music player
 
 const backToHomeBtn = document.querySelector('.music-player-section .back-btn');
 
@@ -66,9 +66,9 @@ backToMusicPlayer.addEventListener('click', () => {
     playlistSection.classList.remove('active');
 })
 
-////////////// navigation done /////////////////
+//////navigation done ////////////////
 
-/////////// music
+/////// music
 
 let currentMusic = 0;
 
@@ -83,7 +83,7 @@ const musicDuration = document.querySelector('.duration');
 
 const queue = [...document.querySelectorAll('.queue')];
 
-// select all buttons here
+////////////// select all buttons here
 
 const forwardBtn = document.querySelector('i.fa-forward');
 const backwardBtn = document.querySelector('i.fa-backward');
@@ -93,7 +93,7 @@ const repeatBtn = document.querySelector('span.fa-redo');
 const volumeBtn = document.querySelector('span.fa-volume-up');
 const volumeSlider = document.querySelector('.volume-slider');
 
-// playBtn click event //
+///////////// playBtn click Event
 
 playBtn.addEventListener('click', () => {
     music.play();
@@ -101,7 +101,7 @@ playBtn.addEventListener('click', () => {
     pauseBtn.classList.add('active');
 })
 
-// pauseBtn click event //
+///////////// pauseBtn click Event
 
 pauseBtn.addEventListener('click', () => {
     music.pause();
@@ -109,7 +109,7 @@ pauseBtn.addEventListener('click', () => {
     playBtn.classList.add('active');
 })
 
-//function for setting up music//
+////////// functions for setting up music
 
 const setMusic = (i) => {
     seekBar.value = 0;
@@ -124,32 +124,32 @@ const setMusic = (i) => {
 
     setTimeout(() => {
         seekBar.max = music.duration;
-        musicDuration.innerHTML = formatTime(music.duration);
+        musicDuration.InnerHTML = formatTime(music.duration);
     }, 300);
-    currentMusicTime.innerHTML = '00 : 00';
+    currentMusicTime.InnerHTML = '00 : 00';
     queue.forEach(item => item.classList.remove('active'));
     queue[currentMusic].classList.add('active');
 }
 
 setMusic(0);
 
-// format duration in 00 : 00 format
+/////////// format duration in 00 : 00 format
 
 const formatTime = (time) => {
     let min = Math.floor(time / 60);
     if(min < 10){
-        min = `0` + min;
+        min = '0' + min;
     }
 
     let sec = Math.floor(time % 60);
     if(sec < 10){
-        sec = `0` + sec;
+        sec = '0' + sec;
     }
 
     return `${min} : ${sec}`;
 }
 
-///////////// seekbar events ////////
+////////// seekBar Event
 
 setInterval(() => {
     seekBar.value = music.currentTime;
@@ -168,9 +168,9 @@ seekBar.addEventListener('change', () => {
     music.currentTime = seekBar.value;
 })
 
-// forward Btn //
+//  forward btn
 
-forwardBtn.addEventListener('click', ()=> {
+forwardBtn.addEventListener('click', () => {
     if(currentMusic >= songs.length - 1){
         currentMusic = 0;
     } else{
@@ -180,9 +180,9 @@ forwardBtn.addEventListener('click', ()=> {
     playBtn.click();
 })
 
-////// backward btn /////
+// backward btn
 
-backwardBtn.addEventListener('click', ()=> {
+backwardBtn.addEventListener('click', () => {
     if(currentMusic <= 0){
         currentMusic = songs.length - 1;
     } else{
@@ -192,13 +192,13 @@ backwardBtn.addEventListener('click', ()=> {
     playBtn.click();
 })
 
-//////// repeat btn /////
+// repeat button
 
 repeatBtn.addEventListener('click', () => {
     repeatBtn.classList.toggle('active');
 })
 
-// volume section //
+// volume section
 
 volumeBtn.addEventListener('click', () => {
     volumeBtn.classList.toggle('active');
