@@ -124,9 +124,9 @@ const setMusic = (i) => {
 
     setTimeout(() => {
         seekBar.max = music.duration;
-        musicDuration.innerHTML = formatTime(music.duration);
+        musicDuration.InnerHTML = formatTime(music.duration);
     }, 300);
-    currentMusicTime.innerHTML = '00 : 00';
+    currentMusicTime.InnerHTML = '00 : 00';
     queue.forEach(item => item.classList.remove('active'));
     queue[currentMusic].classList.add('active');
 }
