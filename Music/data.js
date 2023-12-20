@@ -1,50 +1,50 @@
 let songs = [
     {
-        name: 'song 1',
-        path: 'assets/musics/Song 1.mp3',
-        artist: 'artist 1',
-        cover: 'assets/images/cover 1.png'
+        name: 'Asake-Lonely-At-The-Top-Remix-Ft-Her',
+        path: 'Music/music/Asake-Lonely-At-The-Top-Remix-Ft-Her.mp3',
+        artist: 'Asake',
+        cover: 'images/Asake lonely at the top remix.jpg'
     },
     {
-        name: 'song 2',
-        path: 'assets/musics/Song 2.mp3',
-        artist: 'artist 2',
-        cover: 'assets/images/cover 2.png'
+        name: 'Berri-Tiga-Egopiano-Ft.-Tekno',
+        path: 'Music/music/Berri-Tiga-Egopiano-Ft.-Tekno.mp3',
+        artist: 'Berri-Tiga',
+        cover: 'images/egopiano ft tekno.jpg'
     },
     {
-        name: 'song 3',
-        path: 'assets/musics/Song 2.mp3',
-        artist: 'artist 3',
-        cover: 'assets/images/cover 2.png'
+        name: 'Breezy-Galaxy-Bounce-ft-Ruger-Boy',
+        path: 'Music/music/Breezy-Galaxy-Bounce-ft-Ruger-Boy.mp3',
+        artist: 'Breezy-Galaxy',
+        cover: 'images/Bounce ft Ruger Boy.jpg'
     },
     {
-        name: 'song 4',
-        path: 'assets/musics/Song 2.mp3',
-        artist: 'artist 4',
-        cover: 'assets/images/cover 2.png'
+        name: 'Burna-Boy-Way-Too-Big',
+        path: 'Music/music/Burna-Boy-Way-Too-Big.mp3',
+        artist: 'Burna-Boy',
+        cover: 'images/Burna.jpg'
     },
     {
-        name: 'song 5',
-        path: 'assets/musics/Song 2.mp3',
-        artist: 'artist 5',
-        cover: 'assets/images/cover 2.png'
+        name: 'Salle-Ojuju-Ft.-Commissioner-DJ-Wysei',
+        path: 'Music/music/Salle-Ojuju-Ft.-Commissioner-DJ-Wysei.mp3',
+        artist: 'Salle-Ft.-Commissioner-DJ-Wysei',
+        cover: 'images/Salle-Ojuju-Ft.-Commissioner-DJ-Wysei.mp3.jpg'
     },
     {
-        name: 'song 6',
-        path: 'assets/musics/Song 2.mp3',
-        artist: 'artist 6',
-        cover: 'assets/images/cover 2.png'
+        name: 'Salle-Sipe-Nwa',
+        path: 'Music/music/Salle-Sipe-Nwa-Gen-Z-Version-Zacknation.net_.mp3',
+        artist: 'Salle',
+        cover: 'images/Salle-Ojuju-Ft.-Commissioner-DJ-Wysei.mp3.jpg'
     },
     {
-        name: 'song 7',
-        path: 'assets/musics/Song 2.mp3',
-        artist: 'artist 7',
-        cover: 'assets/images/cover 2.png'
+        name: 'Shallipopi-Cast-Ft.-Odumodublvck',
+        path: 'Music/music/Shallipopi-Cast-Ft.-Odumodublvck.mp3',
+        artist: 'Shallipopi-Ft-Odumodublvck',
+        cover: 'images/shallipopi.jpg'
     },
     {
-        name: 'song 8',
-        path: 'assets/musics/Song 2.mp3',
-        artist: 'artist 8',
-        cover: 'assets/images/cover 2.png'
+        name: 'SMADA EH feat Poco Lee Smeez  D3an',
+        path: 'Music/music/SMADA EH feat Poco Lee Smeez  D3an.mp3',
+        artist: 'Smada Eh Ft Poco Lee',
+        cover: 'images/smada eh ft poco lee.jpg'
     },
 ]
