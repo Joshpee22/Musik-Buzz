@@ -1,6 +1,7 @@
 # Buzz Muzik: Afro Music Trends, News, and Chat
 
 Welcome to Buzz Muzik, your go-to source for the latest trends, news, and vibrant discussions in the world of Afro music! Whether you're a passionate music enthusiast, an artist, or just someone looking to explore the rich and diverse sounds of Afro music, you've come to the right place.
+- **Visit our deployed app:** [www.buzzmusik.com](https://joshpee22.github.io/Musik-Buzz/)
 
 ## Table of Contents
 
@@ -36,7 +37,7 @@ To ensure a positive and inclusive environment, please familiarize yourself with
 
 ## Connect With Us
 
-- **Website:** [www.buzzmuzik.com](https://www.buzzmuzik.com)
+- **Website:** [www.buzzmuzik.com](https://joshpee22.github.io/Musik-Buzz/)
 - **Twitter:** [@BuzzMuzik](https://twitter.com/BuzzMuzik)
 - **Instagram:** [@BuzzMuzikOfficial](https://www.instagram.com/BuzzMuzikOfficial)
 - **Facebook:** [Buzz Muzik](https://www.facebook.com/BuzzMuzik)
